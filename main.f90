@@ -17,7 +17,7 @@
     REAL*8 DVAL, DVAL1
     REAL*8 DGAMMA
     REAL*16 QVAL,QVAL1
-        
+         
     IRES=FACT(IVAR)
     WRITE(*,*)"     ",IVAR,"    ",IRES
     IIRES=FACT(IIVAR)
