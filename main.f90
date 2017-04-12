@@ -17,24 +17,30 @@
     REAL*8 DVAL, DVAL1
     REAL*8 DGAMMA
     REAL*16 QVAL,QVAL1
-         
+
     IRES=FACT(IVAR)
     WRITE(*,*)"     ",IVAR,"    ",IRES
     IIRES=FACT(IIVAR)
     WRITE(*,*)"     ",IIVAR,"    ",IIRES
     SRES=FACT(SVAR)
-    WRITE(*,*)PRECISION(SVAR),"     ",SVAR,"    ",SRES
+    WRITE(*,*)PRECISION(SVAR),"     ",SVAR,"    ",PRECISION(SRES),"     ",SRES
     DRES=FACT(DVAR)
-    WRITE(*,*)PRECISION(DVAR),"     ",DVAR,"    ",DRES
+    WRITE(*,*)PRECISION(DVAR),"     ",DVAR,"    ",PRECISION(DRES),"     ",DRES
     QRES=FACT(QVAR)
-    WRITE(*,*)PRECISION(QVAR),"     ",QVAR,"    ",QRES
+    WRITE(*,*)PRECISION(QVAR),"     ",QVAR,"    ",PRECISION(QRES),"     ",QRES
     SSRES=SEMIFACT(SVAR)
-    WRITE(*,*)PRECISION(SVAR),"     ",SVAR,"    ",SSRES
+    WRITE(*,*)PRECISION(SVAR),"     ",SVAR,"    ",PRECISION(SSRES),"     ",SSRES
     DSRES=SEMIFACT(DVAR)
-    WRITE(*,*)PRECISION(DVAR),"     ",DVAR,"    ",DSRES
+    WRITE(*,*)PRECISION(DVAR),"     ",DVAR,"    ",PRECISION(DSRES),"     ",DSRES
     QSRES=SEMIFACT(QVAR)
-    WRITE(*,*)PRECISION(DVAR),"     ",QVAR,"    ",QSRES
-        
+    WRITE(*,*)PRECISION(DVAR),"     ",QVAR,"    ",PRECISION(QSRES),"     ",QSRES
+    
+    WRITE(*,*)'**********************************************************************'
+    
+    WRITE(*,*)QVAR,SQRT(QVAR),PRECISION(SQRT(QVAR))
+    WRITE(*,*)QVAR,DSQRT(QVAR),PRECISION(DSQRT(QVAR))
+    WRITE(*,*)QVAR,QSQRT(QVAR),PRECISION(QSQRT(QVAR))
+    
     WRITE(*,*)'**********************************************************************'
     
     DVAL=DGAMMA(1.2D0)
