@@ -36,7 +36,7 @@
     WRITE(*,*)PRECISION(DVAR),"     ",QVAR,"    ",PRECISION(QSRES),"     ",QSRES
     
     WRITE(*,*)'**********************************************************************'
-    
+     
     WRITE(*,*)QVAR,SQRT(QVAR),PRECISION(SQRT(QVAR))
     WRITE(*,*)QVAR,DSQRT(QVAR),PRECISION(DSQRT(QVAR))
     WRITE(*,*)QVAR,QSQRT(QVAR),PRECISION(QSQRT(QVAR))
