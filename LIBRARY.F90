@@ -202,8 +202,8 @@ MODULE MOD_FACT
 ! ----------------------------------------------------------
     FUNCTION SSFACT(NUM)
         REAL(4),INTENT(IN):: NUM
-        REAL(4)::SSFACT,SQRT
-        REAL(4), PARAMETER :: PI_4 = 4.0*ATAN(1.0)
+        REAL(4)::SSFACT
+        REAL(4), PARAMETER :: PI_4 = 4*ATAN(1.0)
         INTEGER(4)::J
         
 	    SSFACT=SQRT(PI_4)/2.0
@@ -216,28 +216,25 @@ MODULE MOD_FACT
     
     FUNCTION DSFACT(NUM)
         REAL(8),INTENT(IN):: NUM
-        REAL(8)::DSFACT,DSQRT
-        REAL(8), PARAMETER :: PI_8 = 4.D0*DATAN(1.D0)
+        REAL(8)::DSFACT
+        REAL(8), PARAMETER :: PI_8 = 4*ATAN(1.D0)
         INTEGER(4)::J
-        !REAL(8), PARAMETER :: RAIZPI=1.772453850905516D0
         
-	    DSFACT=DSQRT(PI_8)/2.D0
+	    DSFACT=SQRT(PI_8)/2.D0
         IF(NUM==0)RETURN
 	    DO J=1,NUM
 		    DSFACT=DSFACT*DBLE(J+0.5D0)
 	    END DO
-	    !DSFACT=RAIZPI*DFACTI(2*NUM+1)/2.D0**(NUM+1)
-        RETURN
+	    RETURN
     END
     
     FUNCTION QSFACT(NUM)
         REAL(16),INTENT(IN):: NUM
         REAL(16)::QSFACT,QSQRT
-        REAL(16), PARAMETER :: PI_16 = 4.Q0*QATAN(1.Q0)
+        REAL(16), PARAMETER :: PI_16 = 4*ATAN(1.Q0)
         INTEGER(4)::J 
-        !REAL(16), PARAMETER :: RAIZPI=1.772453850905516Q0
-    
-	    QSFACT=QSQRT(PI_16)/2.Q0
+        
+	    QSFACT=SQRT(PI_16)/2.Q0
         IF(NUM==0)RETURN
 	    DO J=1,NUM
 		    QSFACT=QSFACT*(REAL(J,16)+0.5Q0)
