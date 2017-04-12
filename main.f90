@@ -43,10 +43,7 @@
     
     WRITE(*,*)'**********************************************************************'
     
-    DVAL=1.2D0
-    QVAL=1.2Q0
-    WRITE(*,*)PRECISION(GAMMA(DVAL)),GAMMA(DVAL),PRECISION(DGAMMA(DVAL)),DGAMMA(DVAL)
-    WRITE(*,*)PRECISION(GAMMA(QVAL)),GAMMA(QVAL),PRECISION(QGAMMA(QVAL)),QGAMMA(QVAL)
+   
     
     PAUSE
     
