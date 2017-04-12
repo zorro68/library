@@ -15,6 +15,8 @@
     REAL(8) :: DRES, DVAR=23.D0
     REAL(16) :: QRES, QVAR=23.Q0
     
+    
+    pause
         
     DVAL=DGAMMA(1.2D0)
     DVAL1=GAMMA(1.2D0)
