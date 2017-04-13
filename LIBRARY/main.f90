@@ -3,7 +3,7 @@
     PROGRAM LIB
     
     USE MOD_FACT
-    !USE MOD_STRINGS
+    USE MOD_STRINGS
     
     INTEGER(4) :: IRES, IVAR=8
     INTEGER(8) :: IIRES, IIVAR=8

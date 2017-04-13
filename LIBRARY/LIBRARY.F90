@@ -1326,7 +1326,7 @@ SUBROUTINE QELLIP2CAR(PP,CENTERSDIST,P)
 !   SUBROUTINES OF NUMBERS AND DATA CONVERTION (NUMBERS TO STRINGS AND STRINGS TO NUMBERS)
 !=======================================================================================
 
-MODULE STRINGS
+MODULE MOD_STRINGS
     IMPLICIT NONE
     CONTAINS
     
@@ -1736,7 +1736,7 @@ MODULE STRINGS
 	    CALL BLANKLINES(NLINES,SFILE)
     END
 
-END MODULE STRINGS
+END MODULE MOD_STRINGS
 
     
 !=======================================================================================
